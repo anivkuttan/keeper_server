@@ -2,6 +2,7 @@
   "watch": [
     "src"
   ],
+  "delay": "2500",
   "ext": "ts,json",
   "ignore": [
     "node_modules"
