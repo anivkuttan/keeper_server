@@ -1,8 +1,12 @@
 import { Router } from "express";
 import { inject } from "inversify";
-import TYPES from "../../configs/di/types";
-import { AppRoute } from "../../configs/global/router-interface";
-import AuthController from "./auth-controller";
+import TYPES from "../../../config/di/types";
+import AuthController from "../controllers/auth-controller";
+
+export interface AppRoute {
+  router: Router;
+  path: string;
+}
 
 export default class AuthRoute implements AppRoute {
   router: Router = Router();

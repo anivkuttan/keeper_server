@@ -1,9 +1,9 @@
 import cors from 'cors';
 import express, { Application, Request, Response } from 'express';
 import http from 'http';
-import { Database } from './configs/db/database';
-import container from './configs/di/inversify.config';
-import AuthRoute from './features/auth/auth-route';
+import { Database } from './config/db/database';
+import container from './config/di/inversify.config';
+import AuthRoute from './features/auth/routes/auth-route';
 
 export class App {
   private readonly application: Application = express();

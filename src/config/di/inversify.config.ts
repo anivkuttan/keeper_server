@@ -1,7 +1,7 @@
 import { Container } from "inversify";
 import "reflect-metadata";
-import AuthController from "../../features/auth/auth-controller";
-import AuthRoute from "../../features/auth/auth-route";
+import AuthController from "../../features/auth/controllers/auth-controller";
+import AuthRoute from "../../features/auth/routes/auth-route";
 import TYPES from "./types";
 
 
